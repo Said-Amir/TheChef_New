@@ -1,0 +1,157 @@
+main{
+    .myContainer2{
+        border: solid rgba(163, 162, 162, 0.363) 1px;
+        padding: 0;
+        position: relative;
+        .cornerTopLeft{
+            position: absolute;
+        }
+        .cornerTopRight{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .cornerBottomLeft{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .cornerBottomRight{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .icons{
+            margin-bottom: 100px;
+            .iconDirection{
+                border-right: solid 1px rgba(0, 0, 0, 0.198);
+                margin-left: 7px;
+                margin-right: 30px;
+                .iconHover{
+                    border-radius: 0!important;
+                    color: rgba(0, 0, 0, 0.301);
+                    padding: 20px 65px;
+                    border-bottom: solid 1px rgba(0, 0, 0, 0.198);
+                    margin-right: 3px;
+                    box-sizing: border-box;
+                    position: relative;
+                    .traitRed{
+                        position: absolute;
+                        right: -3px;
+                        top: 0;
+                        height: 100%;
+                        width: 5px;
+                    }
+                    span{
+                        color: black!important;
+                        font-size: 25px!important;
+                    }
+                }
+                .iconHover.active{
+                    background-color: white!important;
+                }
+                .iconHover.active i{ 
+                    color: #B12A3B!important;
+                }
+                .iconHover.active .traitRed{ 
+                    background-color: #B12A3B!important;
+                }
+                .boite{
+                    height: 100px;
+                    width: 100%;
+                }
+            }
+            .iconContent{
+                .menuItems{
+                    border-bottom: dotted 1px rgba(128, 128, 128, 0.239);
+                    h4{
+                        font-size: 17px;
+                        font-weight: 700;
+                        margin: 0;
+                    }
+                    .imgMenu{
+                        height: 120px;
+                        width: 120px;
+                        img{
+                            width: 100%!important;
+                            border: solid 4px rgba(128, 128, 128, 0.239);
+                            box-sizing: content-box;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+.price {
+    background-color: rgba(221, 220, 220, 0.404);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 992px){
+    .price{
+        padding: 0;
+    }
+    main{
+        .myContainer2{
+            .icons{
+                flex-direction: column!important;
+                .iconDirection{
+                    flex-direction: row!important;
+                    .iconHover{
+                        border-radius: 0!important;
+                        color: rgba(0, 0, 0, 0.301);
+                        padding: 20px 45px;
+                        border-bottom: solid 1px rgba(0, 0, 0, 0.198);
+                        width: 100%!important;
+                        .traitRed{
+                            position: absolute;
+                            right: -3px;
+                            top: 0;
+                            height: 100%;
+                            width: 5px;
+                        }
+                        span{
+                            color: black!important;
+                            font-size: 25px!important;
+                        }
+                    }
+                    .iconHover.active{
+                        background-color: white!important;
+                    }
+                    .iconHover.active i{
+                        color: #B12A3B!important;
+                    }
+                    .boite{
+                        display: none;
+                    }
+                }
+                .iconContent{
+                    .menuItems{
+                        border-bottom: dotted 1px rgba(128, 128, 128, 0.239);
+                        h4{
+                            font-size: 14px;
+                            font-weight: 700;
+                            margin: 0;
+                            padding: 0 0;
+                        }
+                        .imgMenu{
+                            height: 90px;
+                            width: 90px;
+                            img{
+                                width: 100%!important;
+                                border: solid 4px rgba(128, 128, 128, 0.239);
+                                box-sizing: content-box;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
