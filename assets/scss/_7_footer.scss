@@ -1,0 +1,59 @@
+footer{
+    background-image: url("../img/footer_background.jpg");
+    background-size: cover;
+    .decoFooter{
+        background-image: url("../img/footer_bottom_decoration_img.png");
+        height: 10px;
+        position: absolute;
+        top: 0;
+    }
+    i{
+        font-size: 30px;
+    }
+    .imgInsta{
+        
+        img{
+            margin: 5px;
+        }
+    }
+    .pop{
+        .boiteBtn{
+            height: 17vh;
+            a{
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+.afterFooter{
+    height: 90px;
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        background-image: url("../img/footer_background.jpg");
+        background-size: cover;
+        .decoFooter{
+            background-image: url("../img/footer_bottom_decoration_img.png");
+            height: 10px;
+            position: absolute;
+            top: 0;
+        }
+        i{
+            font-size: 30px;
+        }
+        .imgInsta{
+            padding-top: 20px;
+            img{
+                margin: 3px;
+            }
+        }
+        a{
+            font-size: 15px;
+        }
+        .pop{
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+#contact{
+    .divContact{
+        width: 22%;
+        border-radius: 10px;
+        padding-top: 25px;
+        i{
+            font-size: 45px;
+            margin-top: 15px;
+        }
+        span{
+            padding-bottom: 15px;
+        }
+        a{
+            color: white;
+            margin-top: 10px;
+        }
+        .underlineContact{
+            width: 95%;
+            border-bottom: solid rgba(255, 255, 255, 0.534) 1px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #contact{
+        .divContact{
+            width: 80%;
+            border-radius: 10px;
+            padding-top: 25px;
+            i{
+                font-size: 45px;
+            }
+            span{
+                width: 95%;
+                border-bottom: solid white 1px;
+            }
+        }
+    }
+}

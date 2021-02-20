@@ -1,0 +1,25 @@
+#testimonials{
+    background-image: url("../img/testimonials_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.testimonialsCircle{
+    width: 80%;
+    img{
+        width: 100%;
+        border-radius: 50%;
+        border: solid 5px rgb(255, 255, 255);
+    }
+}
+
+@media screen and (max-width: 700px){
+    .testimonialsCircle{
+        width: 60%;
+        img{
+            width: 100%;
+            border-radius: 50%;
+            border: solid 5px rgb(255, 255, 255);
+        }
+    }
+}
